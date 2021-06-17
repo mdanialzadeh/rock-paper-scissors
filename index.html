@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Sue+Ellen+Francisco&display=swap" rel="stylesheet">    
+    <title>Document</title>
+</head>
+    
+<body>
+    <div id=overlay>
+        <button id="playagain"> play again</button>
+    </div>
+    <header>
+        <h2 class= title>A Hero's Tale</h2>
+    </header>
+    <div class="rules">
+        <p class="rd">Rules Description</p>
+        <div><img class= rulesdiagram src="img/rulespic.png" width="400px" alt="rules diagram"></div>
+    </div>
+
+    <div class="gameshow"> 
+        <div class="player1">
+            <div class="hpplayer">HP: 5</div>
+            
+                <div class="animationplayer">
+                    <img class="charsprite" src="img/idlecharanimation.png" alt="charsprite">
+            </div>
+        </div>
+        <div class="vs">vs</div>
+        <div class="comp1">
+            <div class="hpcomp">HP: 5</div>
+                <div class="animationcomp">
+                <img class="enemysprite" src="img/wolf animiation idle.png" alt="enemy">
+                </div>
+        </div>
+    </div>
+
+    <div class="results">
+        <p class="results" id="outcome">results</p>
+    </div>
+
+    <div class="choices">
+        <div class= "choice" id="Attack">
+            <h2 width= "130px">Attack</h2>
+            <img src="img/icons/blade-drag.png" alt="attack" height="130px" width="130px">
+        </div>          
+        <div class= "choice" id="Skill">
+            <h2 width= "130px" >Skill</h2>
+            <img src="img/icons/shouting (3).png" alt="Skill" height="130px" width="130px">
+        </div>               
+        <div class="choice" id="Defend">
+            <h2 width= "130px">Defend</h2>
+            <img src="img/icons/shield-reflect (3).png" alt="Defend" height="130px" width="130px">
+        </div>
+    </div>
+
+<script src="scripts.js"></script>
+    
+</body>
+</html>

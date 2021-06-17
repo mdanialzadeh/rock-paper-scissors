@@ -1,0 +1,223 @@
+html {
+    background-image: url("img/icons/draw-pixel-art-sprites-and-backgrounds.jpeg");
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+  }
+body {
+    background-color: rgba(255, 255, 255, 0.35);
+    width: 840px;
+    margin: 0px auto 600px auto;
+    padding-bottom: 30px;
+    font-family: 'Indie Flower', cursive;
+}
+
+.title {
+   display: flex;
+   justify-content: center;
+   width: 800px;
+   margin: 40px auto 10px auto;
+   padding-top: 30px;
+   font-family: inherit;
+   font-size: 30px;
+}
+
+.rules {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    width: 800px;
+    padding-bottom: 20px;
+
+}
+
+.rd {
+    background: rgba(178, 231, 187, 0.808);
+    width: 340px;
+    height: 140px;
+    padding: 10px;
+}
+
+.rulesdiagram {
+    background: rgba(255, 255, 255, 0.501);
+}
+.gameshow {
+    display: flex;
+    flex-direction: row;
+    border-left: solid 1px;
+    border-right: solid 1px;
+    justify-content:space-between;
+    width: 800px;
+    height: 260px;
+    margin: auto;
+    background-image:url("img/New Piskel.png");
+    
+}
+
+/* Player 1*/
+@keyframes movesprite {
+    from {
+        transform: translate(0px,0px);
+    }
+    to {
+        transform: translate(-100%,0px);
+    }   
+}
+
+@keyframes right {
+    from {
+        transform: translateX(0px)
+    }
+    to {
+        transform: translateX(15px);
+    }
+}
+    .player1 {
+        border: transparent
+    }
+        .hpplayer {
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 5px;
+            margin: 5px 100px auto auto;
+            padding-left: 20px;
+            width: 180px;
+            font-size: 24px;
+            background: tomato;
+        }
+        .animationplayer {
+            border: transparent;
+            background-color: transparent;
+            width: 320px;
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+            margin: 0em;
+        }    
+            .charsprite {   
+                animation: movesprite 2s steps(4) infinite;
+                animation-delay: 0s;
+                margin-top: -90px;
+                margin-left: -55px;
+        }
+                #charatk {
+                    margin-top: -90px;
+                    margin-left: 10px;  
+                }
+                #chardef {
+                    margin-top: -90px;
+                    margin-left: -90px;
+                }
+                #charskl {            
+                    margin-top: -120px;
+                    margin-left: -55px;
+                }  
+/*vs*/
+    .vs {
+        border: transparent;
+        padding: 0em 0em;
+        min-width: max-content;
+    }
+/* comp*/
+    .comp1 {
+        border: transparent;
+        margin-bottom: 5px;
+    }
+        .hpcomp{
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 5px;
+            margin: 5px 0px auto 100px; 
+            padding-right: 20px;
+            width: 180px;
+            font-size: 24px;
+            background: tomato;
+        }    
+        .animationcomp{
+            border:transparent;
+            width: 320px;
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+        }
+            .enemysprite {
+            animation: movesprite 2.0s steps(4) infinite;
+            animation-delay: 0s;
+            margin-top: -155px;
+            margin-left: 50px;
+            }
+                #enemyatk {
+                margin-top: -155px;
+                margin-left: -10px;  
+                }
+                #enemydef {
+                margin-top: -155px;
+                margin-left: 60px;
+                }
+                #enemyskl {            
+                margin-top: -180px;
+                margin-left: 50px;
+            }  
+.results {
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    border:solid 1px;
+    width: 800px;
+    margin: auto;
+}
+
+.choices {
+    width: 700px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    padding:auto;
+    justify-self: center;
+}
+#Attack {    
+}
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.973);
+    cursor: pointer;
+    z-index: 2;
+}
+.choice:hover{
+    transform: scale(1.1);
+}
+.choice {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+#playagain {
+    z-index: 2;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 500px auto 500px auto;
+    height: 100px;
+    width: 200px;
+    background: black;
+    color: white;
+    font-size: 20px;
+    
+
+}
