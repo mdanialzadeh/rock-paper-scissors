@@ -9,13 +9,17 @@ const Defend_button = document.getElementById("Defend");
 const playersprite = document.querySelector(".charsprite");
 const computersprite = document.querySelector(".enemysprite");
 const playagain_button = document.querySelector('button');
-
+const gameresults_span = document.getElementById("gameend");
 
 
 
 function gameOver(comphp,userhp){
-    if (comphp === 0 || userhp ===0) {
+    if (comphp === 0 && userhp > 0) {
         overlayon();
+        gameresults_span.innerHTML = ("VICTORY!");
+    } else if (comphp > 0 && userhp === 0) {
+        overlayon ();
+        gameresults_span.innerHTML = ("DEFEAT... try again")   
     }
 }   
 

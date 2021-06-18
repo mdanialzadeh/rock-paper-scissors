@@ -12,7 +12,7 @@ html {
     overflow: hidden;
   }
 body {
-    background-color: rgba(255, 255, 255, 0.35);
+    background-color: rgba(255, 255, 255, 0.45);
     width: 840px;
     margin: 0px auto 600px auto;
     padding-bottom: 30px;
@@ -24,7 +24,8 @@ body {
    justify-content: center;
    width: 800px;
    margin: 40px auto 10px auto;
-   padding-top: 30px;
+   padding-top: 20px;
+   padding-bottom: 0px;
    font-family: inherit;
    font-size: 30px;
 }
@@ -33,16 +34,22 @@ body {
     display: flex;
     justify-content: space-around;
     margin: auto;
+    margin-bottom: 10px;
     width: 800px;
-    padding-bottom: 20px;
-
+    padding-bottom: 10px;
+    padding-top: 0px;
+    align-items: center;
+    background: rgba(178, 231, 187, 0.808);
+    border:2px solid;
 }
 
 .rd {
-    background: rgba(178, 231, 187, 0.808);
-    width: 340px;
-    height: 140px;
-    padding: 10px;
+    width: 440px;
+    height: 210px;
+    padding: 2px;
+    font-size: 16px;
+    font-style:italic;
+    font-weight: bold;
 }
 
 .rulesdiagram {
@@ -51,13 +58,13 @@ body {
 .gameshow {
     display: flex;
     flex-direction: row;
-    border-left: solid 1px;
-    border-right: solid 1px;
     justify-content:space-between;
     width: 800px;
     height: 260px;
     margin: auto;
     background-image:url("img/New Piskel.png");
+    border: black solid 3px;
+    border-bottom: transparent;
     
 }
 
@@ -91,6 +98,7 @@ body {
             width: 180px;
             font-size: 24px;
             background: tomato;
+            border: black solid 2px;
         }
         .animationplayer {
             border: transparent;
@@ -123,7 +131,10 @@ body {
     .vs {
         border: transparent;
         padding: 0em 0em;
+        margin-top: 1em;
         min-width: max-content;
+        font-weight: bolder;
+        font-size: 30px;
     }
 /* comp*/
     .comp1 {
@@ -139,6 +150,7 @@ body {
             width: 180px;
             font-size: 24px;
             background: tomato;
+            border: black solid 2px;
         }    
         .animationcomp{
             border:transparent;
@@ -169,9 +181,22 @@ body {
     display: flex;
     justify-content: center;
     align-content: flex-end;
-    border:solid 1px;
+    border-top: green 2px solid;
+    border-left: solid 3px black;
+    border-bottom: solid 3px black;
+    border-right: solid 3px black;
     width: 800px;
+    height: 60px;
     margin: auto;
+    background: rgba(255, 255, 255, 0.534);
+    font-weight: bolder;
+    font-size: 20px;
+}
+#outcome {
+    margin: auto;
+    width: 730px;
+    border:transparent;
+    background:transparent;
 }
 
 .choices {
@@ -182,8 +207,7 @@ body {
     padding:auto;
     justify-self: center;
 }
-#Attack {    
-}
+
 #overlay {
     position: fixed;
     display: none;
@@ -197,6 +221,16 @@ body {
     cursor: pointer;
     z-index: 2;
 }
+
+.choices {
+    display: flex;
+    justify-content: space-around;
+    border: black solid 3px;
+    border-top: transparent;
+    width: 800px;
+    margin: 0px auto auto auto;
+    padding-bottom: 20px;
+}
 .choice:hover{
     transform: scale(1.1);
 }
@@ -204,6 +238,11 @@ body {
     display: flex;
     flex-flow: column;
     align-items: center;
+    border: black 2px solid;
+    margin-top: 30px;
+    padding: 5px;
+    padding-top: 0px;
+    background: rgba(0, 0, 0, 0.185);
 }
 
 #playagain {
@@ -212,12 +251,22 @@ body {
     justify-content: center;
     align-items: center;
     align-content: center;
-    margin: 500px auto 500px auto;
+    margin: 100px auto 0px auto;
     height: 100px;
     width: 200px;
     background: black;
     color: white;
     font-size: 20px;
-    
-
+}
+#gameend {
+    z-index: 2;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 200px auto 0px auto;
+    height: 100px;
+    width: 200px;
+    color: white;
+    font-size: 40px;
 }
