@@ -45,13 +45,12 @@ body {
 
 .rd {
     width: 440px;
-    height: 220px;
+    height: 210px;
     padding: 2px;
     font-size: 16px;
     font-style:italic;
     font-weight: bold;
 }
-
 .rulesdiagram {
     background: rgba(255, 255, 255, 0.501);
 }
